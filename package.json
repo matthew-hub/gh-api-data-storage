@@ -1,0 +1,17 @@
+{
+  "name": "github-api-data-storage",
+  "version": "0.1.0",
+  "description": "Desktop application using the GitHub API for store data",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/matthew-hub/gh-api-data-storage",
+  "keywords": ["github api", "storage", "data"],
+  "author": "mateuszr430@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^7.1.1"
+  }
+}
