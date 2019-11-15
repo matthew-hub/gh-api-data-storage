@@ -12,6 +12,7 @@ const defaultProps = {
   frame: false,
   show: false,
   backgroundColor: '#212121',
+  icon: __dirname + '\\..\\assets\\images\\icon\\appicon.png',
   webPreferences: {
     // webSecurity: false,
     nodeIntegration: true
@@ -23,7 +24,7 @@ class WindowCreate extends BrowserWindow {
     // console.log(windowSettings);
     // console.log(defaultProps);
     super({ ...defaultProps, ...windowSettings });
-    
+
     this.loadFile('renderer/' + file);
     this.webContents.openDevTools();
 
