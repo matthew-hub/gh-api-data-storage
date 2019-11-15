@@ -1,5 +1,6 @@
 /* ------------------ */
 /* -- 'APP STYLES' --*/
+@import '_reset';
 
 body {
   color: #ffffff;
@@ -99,7 +100,6 @@ body {
 }
 
 .app-menu__item:hover {
-  
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
 }
@@ -121,7 +121,7 @@ body {
   -webkit-app-region: no-drag;
 }
 
-.app-window-control  .button {
+.app-window-control .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,5 +145,6 @@ body {
   background: #e81123;
   color: #fff;
 }
+
 /* ------------------ */
 /* ------------------ */
