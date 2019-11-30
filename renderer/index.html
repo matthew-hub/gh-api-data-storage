@@ -22,10 +22,10 @@
                 <div class="app-menu__item ">
                   <span>Edit</span>
                 </div>
-                <div class="app-menu__item" >
+                <div class="app-menu__item">
                   <span>API</span>
                 </div>
-                <div class="app-menu__item" >
+                <div class="app-menu__item">
                   <span>Help</span>
                 </div>
               </div>
@@ -46,7 +46,127 @@
             </div>
           </div>
           <div class="app-container">
-            <div class="add-api-url"></div>
+            <div class="app-sidebar">
+              <div class="app-sidebar__name">
+                <h4>EXPLORER API</h4>
+              </div>
+              <div class="app-sidebar__open-api">
+                <div class="app-sidebar__open-api--title">
+                  <div class="expand-more-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15" class="expand-more">
+                      <g id="expand-more" transform="translate(-1 -4)">
+                        <path
+                          id="Path_2"
+                          data-name="Path 2"
+                          d="M22.967,58.65,13,67.974,3.033,58.65,0,61.488,13,73.65,26,61.488Z"
+                          transform="translate(1 -54.65)"
+                          fill="#fff"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  OPEN API
+                </div>
+                <div class="open-api-container">
+                  <!-- <div class="open-api-item">
+                    Welcome
+                  </div>
+                  <div class="open-api-item open-api-item--selected">
+                    Welcome
+                  </div> -->
+                </div>
+              </div>
+              <div class="app-sidebar__list-api">
+                <div class="app-sidebar__list-api--title">
+                  <div class="expand-more-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15" class="expand-more">
+                      <g id="expand-more" transform="translate(-1 -4)">
+                        <path
+                          id="Path_2"
+                          data-name="Path 2"
+                          d="M22.967,58.65,13,67.974,3.033,58.65,0,61.488,13,73.65,26,61.488Z"
+                          transform="translate(1 -54.65)"
+                          fill="#fff"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  API LIST
+                </div>
+                <div class="list-api__search">
+                  <input type="text" name="" id="search-api-list" placeholder="SEARCH API LIST" />
+                  <div class="list-api__search--no-folder-selected">
+                    <p>You have not opened or specified file of API list. Only open file are currently searched.</p>
+                  </div>
+                </div>
+                <div class="list-api-container">
+                  <div class="list-api-container--nofolder">
+                    <button type="button">Open API List</button>
+                  </div>
+                  <!-- <div class="list-api-item">
+                    repo.json
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="app-editor-container">
+              <div class="open-api-bar">
+                <!-- <div class="open-api-bar__item">Welcome</div>
+                <div class="open-api-bar__item open-api-bar__item--selected">Welcome</div> -->
+              </div>
+
+              <div class="app-start-page">
+                <div class="app-start-page__box">
+                  <div class="app-start-page__box--icon">
+                    <svg id="start-page-icon" xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+                      <path
+                        id="Path_2145"
+                        data-name="Path 2145"
+                        d="M161.107,13H17a4,4,0,0,0-4,4v144.1a4,4,0,0,0,4,4h144.1a4,4,0,0,0,4-4V17A4,4,0,0,0,161.107,13Zm-4,144.1H21.006V21.006H157.1Z"
+                        transform="translate(30.945 30.945)"
+                        fill="#1c1f25"
+                      />
+                      <path
+                        id="Path_2146"
+                        data-name="Path 2146"
+                        d="M242,54V46H213.6A20.064,20.064,0,0,0,198,30.4V2h-8V30H174V2h-8V30H150V2h-8V30H126V2h-8V30H102V2H94V30H78V2H70V30H54V2H46V30.4A20.064,20.064,0,0,0,30.4,46H2v8H30V70H2v8H30V94H2v8H30v16H2v8H30v16H2v8H30v16H2v8H30v16H2v8H30.4A20.064,20.064,0,0,0,46,213.6V242h8V214H70v28h8V214H94v28h8V214h16v28h8V214h16v28h8V214h16v28h8V214h16v28h8V213.6A20.064,20.064,0,0,0,213.6,198H242v-8H214V174h28v-8H214V150h28v-8H214V126h28v-8H214V102h28V94H214V78h28V70H214V54ZM206,194a12,12,0,0,1-12,12H50a12,12,0,0,1-12-12V50A12,12,0,0,1,50,38H194a12,12,0,0,1,12,12Z"
+                        transform="translate(-2 -2)"
+                        fill="#1c1f25"
+                      />
+                      <g id="Group_48" data-name="Group 48">
+                        <path id="Path_2147" data-name="Path 2147" d="M17,17h7.99V32.98H17Z" transform="translate(43.003 43.005)" fill="#1c1f25" />
+                        <path id="Path_2148" data-name="Path 2148" d="M21,17h7.99V32.98H21Z" transform="translate(55.003 43.005)" fill="#1c1f25" />
+                        <path id="Path_2149" data-name="Path 2149" d="M25,17h7.99V32.98H25Z" transform="translate(67.004 43.005)" fill="#1c1f25" />
+                        <path id="Path_2150" data-name="Path 2150" d="M29,17h7.99V32.98H29Z" transform="translate(79.005 43.005)" fill="#1c1f25" />
+                        <path id="Path_2151" data-name="Path 2151" d="M33,17h7.99V32.98H33Z" transform="translate(91.005 43.005)" fill="#1c1f25" />
+                        <path id="Path_2152" data-name="Path 2152" d="M26,27H89.92v7.99H26Z" transform="translate(70.044 73.004)" fill="#1c1f25" />
+                        <path id="Path_2153" data-name="Path 2153" d="M22,31h79.9v7.99H22Z" transform="translate(58.05 85.005)" fill="#1c1f25" />
+                        <path id="Path_2154" data-name="Path 2154" d="M22,35h79.9v7.99H22Z" transform="translate(58.05 97.006)" fill="#1c1f25" />
+                        <path id="Path_2155" data-name="Path 2155" d="M22,27h7.99v7.99H22Z" transform="translate(58.003 73.004)" fill="#1c1f25" />
+                        <path id="Path_2156" data-name="Path 2156" d="M29,43h7.99V58.98H29Z" transform="translate(79.005 121.015)" fill="#1c1f25" />
+                        <path id="Path_2157" data-name="Path 2157" d="M33,43h7.99V58.98H33Z" transform="translate(91.005 121.015)" fill="#1c1f25" />
+                        <path id="Path_2158" data-name="Path 2158" d="M37,43h7.99V58.98H37Z" transform="translate(103.006 121.015)" fill="#1c1f25" />
+                        <path id="Path_2159" data-name="Path 2159" d="M41,43h7.99V58.98H41Z" transform="translate(115.007 121.015)" fill="#1c1f25" />
+                        <path id="Path_2160" data-name="Path 2160" d="M45,43h7.99V58.98H45Z" transform="translate(127.007 121.015)" fill="#1c1f25" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="app-start-page--shortcut">
+                   <p>
+                      Open API List <span class="start-page-shortcut--appearance">Ctrl</span> + <span class="start-page-shortcut--appearance">O</span>
+                   </p> 
+                    <!-- </br> -->
+                    <p>
+                      Add API Url <span class="start-page-shortcut--appearance">Ctrl</span> + <span class="start-page-shortcut--appearance">K</span>
+                    </p>
+                    </div>
+                </div>
+                <!-- <button type="button"> Add API URL</button> -->
+              </div>
+            </div>
+            <!-- <div class="api-url-input" id="add-api-url">
+              <input type="text" name="api-url" id="">
+            </div> -->
           </div>
         </div>
       </div>
