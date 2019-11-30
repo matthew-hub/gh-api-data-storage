@@ -2,7 +2,7 @@
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
 
-const remote = require('electron').remote;
+const { remote, ipcRenderer } = require('electron');
 
 console.log('[NOLOADED]', new Date().getMilliseconds());
 
@@ -10,10 +10,13 @@ console.log('[NOLOADED]', new Date().getMilliseconds());
 window.addEventListener('DOMContentLoaded', () => {
   console.log('[DOMLOADED]', new Date().getMilliseconds());
   handleWindowControls();
+  // document.getElementById('add-api-url').addEventListener('click', () => {
+  //   ipcRenderer.send('add-api-url-window');
+  // });
 });
 
 function handleWindowControls() {
-  let window ;
+  let window;
 
   // get all buttons to control
   const minButton = document.getElementById('min-button'),
@@ -50,7 +53,7 @@ function handleWindowControls() {
     window.close();
   });
 
-  // call function when window change 
+  // call function when window change
   window.on('maximize', toggleMaxRestoreButton);
   window.on('unmaximize', toggleMaxRestoreButton);
 
@@ -69,3 +72,4 @@ function handleWindowControls() {
     }
   }
 }
+

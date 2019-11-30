@@ -1,6 +1,6 @@
 'use strict';
 
-const { app } = require('electron');
+const { app, ipcMain } = require('electron');
 const path = require('path');
 
 const WindowCreate = require('./utils/WindowCreate');
@@ -8,16 +8,17 @@ const WindowCreate = require('./utils/WindowCreate');
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 
-
 function initiWindowApp() {
   let appWindow = new WindowCreate({
-    file: 'index.html'
+    // file: 'https://matthew-hub.github.io/snake/'
+    file: 'renderer/index.html'
   });
   // Emitted when the window is closed.
   appWindow.on('closed', () => {
     console.log('Closed');
     appWindow = null;
   });
+
 }
 
 // This method will be called when Electron has finished
