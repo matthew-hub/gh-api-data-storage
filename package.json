@@ -12,6 +12,6 @@
   "author": "mateuszr430@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "electron": "^7.1.1"
+    "electron": "^9.4.0"
   }
 }
